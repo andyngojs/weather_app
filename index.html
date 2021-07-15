@@ -17,12 +17,17 @@
     <div class="container">
       <div class="main-section">
         <div class="search-bar">
-          <i class="fas fa-search"></i>
-          <input type="text" name="search-city" id="search-input" />
+          <i class="fas fa-search search-icon"></i>
+          <input
+            type="text"
+            name="search-city"
+            id="search-input"
+            placeholder="Search City..."
+          />
         </div>
 
         <!-- Main Content -->
-        <div class="content">
+        <div class="content info-wrapper">
           <h2 class="city-name">Ha Noi</h2>
           <p class="weather-state">Clean Sky</p>
           <img
@@ -30,11 +35,33 @@
             alt="weather icon"
             sizes=""
             srcset=""
+            class="weather-icon"
           />
           <p class="temperature">26</p>
         </div>
       </div>
-      <div class="additional-section"></div>
+      <div class="additional-section">
+        <div class="row">
+          <div class="item">
+            <div class="label">MT Moc</div>
+            <div class="value">--:--</div>
+          </div>
+          <div class="item">
+            <div class="label">MT Lan</div>
+            <div class="value">--:--</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="item">
+            <div class="label">Do Am</div>
+            <div class="value">73%</div>
+          </div>
+          <div class="item">
+            <div class="label">Wind</div>
+            <div class="value">5.45 km/h</div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 
