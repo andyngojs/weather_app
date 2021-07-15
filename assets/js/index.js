@@ -44,7 +44,7 @@ searchInput.addEventListener("change", (e) => {
 
     sunset.innerHTML =
       moment.unix(data.sys.sunset).format("H:mm") || DEFAULT_VALUE;
-    setConfig("sunrise", moment.unix(data.sys.sunset).format("H:mm"));
+    setConfig("sunset", moment.unix(data.sys.sunset).format("H:mm"));
 
     humidity.innerHTML = data.main.humidity || DEFAULT_VALUE;
     windSpeed.innerHTML = (data.wind.speed * 3.6).toFixed(2) || DEFAULT_VALUE;

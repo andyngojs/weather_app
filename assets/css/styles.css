@@ -10,6 +10,12 @@ html {
   line-height: 1.6rem;
 }
 
+body {
+  height: 100vh;
+  background: linear-gradient(to right bottom, #fe0c6b, #29055e);
+  overflow: hidden;
+}
+
 :root {
   --white-color: #fff;
   --black-color: #000;
@@ -24,6 +30,8 @@ html {
   margin: 40px auto;
   border-radius: 6px;
   font-size: 1.4rem;
+  box-shadow: 4px 4px 12px #888;
+  border: none;
 }
 
 .search-bar {
