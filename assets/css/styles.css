@@ -29,12 +29,12 @@ html {
 .search-bar {
   width: 50%;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 24px;
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid var(--white-color);
+  border-bottom: 2px solid var(--white-color);
 }
 
 .search-icon {
@@ -48,7 +48,7 @@ html {
   outline: none;
   padding: 4px 4px 4px 20px;
   background: transparent;
-  height: 20px;
+  height: 24px;
   color: var(--white-color);
 }
 
@@ -66,12 +66,12 @@ html {
 }
 
 .city-name {
-  font-size: 2rem;
-  margin-bottom: 4px;
+  font-size: 3rem;
+  margin-bottom: 16px;
 }
 
 .weather-state {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .weather-icon {
