@@ -19,18 +19,19 @@ body {
 :root {
   --white-color: #fff;
   --black-color: #000;
-  --power-color: #2193b0;
+  --power-color: #36a8c5;
+  --text-color: #ddd;
 }
 
 /* Main App */
 .container {
-  color: var(--white-color);
-  background: linear-gradient(45deg, var(--power-color), #6dd5ed);
+  color: var(--text-color);
+  background: linear-gradient(45deg, var(--power-color), #0a8daa);
   width: 400px;
   margin: 40px auto;
   border-radius: 6px;
   font-size: 1.4rem;
-  box-shadow: 4px 4px 12px #888;
+  box-shadow: 4px 4px 20px #333;
   border: none;
 }
 
@@ -54,9 +55,10 @@ body {
 #search-input {
   border: none;
   outline: none;
-  padding: 4px 4px 4px 20px;
+  padding: 6px 6px 6px 40px;
   background: transparent;
   height: 24px;
+  font-size: 1.6rem;
   color: var(--white-color);
 }
 
@@ -102,7 +104,7 @@ body {
 }
 
 .additional-section {
-  border-top: 1px solid var(--white-color);
+  border-top: 2px solid var(--white-color);
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
