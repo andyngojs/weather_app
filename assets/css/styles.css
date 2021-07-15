@@ -76,6 +76,7 @@ body {
 .city-name {
   font-size: 2.5rem;
   margin-bottom: 16px;
+  user-select: none;
 }
 
 .weather-state {

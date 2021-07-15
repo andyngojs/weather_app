@@ -16,11 +16,23 @@ const sunset = $(".sunset");
 const humidity = $(".humidity");
 const windSpeed = $(".wind-speed");
 
+const config = JSON.parse(localStorage.getItem(WEATHER_DATA_KEY)) || {};
+
+function setConfig(key, value) {
+  config[key] = value;
+  localStorage.setItem(WEATHER_DATA_KEY, JSON.stringify(config));
+}
+
 searchInput.addEventListener("change", (e) => {
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&appid=${APPID}&units=metric&lang=vi`
   ).then(async (res) => {
     const data = await res.json();
+
+    if (parseInt(data.cod) === 404) {
+      alert("Không tìm thấy thành phố này. Vui lòng tìm thành phố khác! ");
+    }
+
     const srcIcon = data.weather[0].icon;
 
     cityName.innerHTML = data.name || DEFAULT_VALUE;
@@ -53,12 +65,3 @@ searchInput.addEventListener("change", (e) => {
     setConfig("windSpeed", data.wind.speed);
   });
 });
-
-const config = JSON.parse(localStorage.getItem(WEATHER_DATA_KEY)) || {};
-
-console.log(config.cityName);
-
-function setConfig(key, value) {
-  config[key] = value;
-  localStorage.setItem(WEATHER_DATA_KEY, JSON.stringify(config));
-}
